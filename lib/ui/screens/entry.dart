@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:cam_capture/ui/widgets/animatedlogo.dart';
 
 class EntryScreen extends StatefulWidget{
     const EntryScreen ({super.key});
@@ -17,7 +17,7 @@ class _EntryScreenState extends State<EntryScreen>{
                 title: const Text ('Entry Screen'),
             ),
             body: const Center(
-                child: Text ('This is the entry screen'),
+                child: AnimatedLogo(),
             ),
         );
     }
