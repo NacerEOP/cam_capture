@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cam_capture/ui/screens/entry.dart';
 
+
 void main() {
   runApp(const MyCamApp());
 }

@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-
+import 'package:cam_capture/ui/screens/camcapture.dart';
 
 class AnimatedLogo extends StatefulWidget {
   const AnimatedLogo({super.key});
@@ -25,6 +25,9 @@ class _AnimatedLogoState extends State<AnimatedLogo>{
         });
       });
     }
+    Future.delayed(Duration(milliseconds: delay*(max + 1)),(){
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => CamCapture()));
+    });
   }
 
   @override
