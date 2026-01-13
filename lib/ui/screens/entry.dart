@@ -13,9 +13,7 @@ class _EntryScreenState extends State<EntryScreen>{
     @override
     Widget build (BuildContext context){
         return Scaffold(
-            appBar: AppBar(
-                title: const Text ('Entry Screen'),
-            ),
+            
             body: const Center(
                 child: AnimatedLogo(),
             ),
