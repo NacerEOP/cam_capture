@@ -11,7 +11,7 @@ class AnimatedLogo extends StatefulWidget {
 }
 
 class _AnimatedLogoState extends State<AnimatedLogo>{
-  late double _Opacity = 0.0;
+  late double _opacity = 0.0;
   
   @override
   void initState(){
@@ -21,7 +21,7 @@ class _AnimatedLogoState extends State<AnimatedLogo>{
     for (int i = 0; i < max; i++){
       Future.delayed(Duration(milliseconds: delay*(i + 1)),(){
         setState(() {
-          _Opacity = i/max;
+          _opacity = i/max;
         });
       });
     }
@@ -29,7 +29,7 @@ class _AnimatedLogoState extends State<AnimatedLogo>{
 
   @override
   Widget build(BuildContext context){
-       return Opacity(opacity: _Opacity,
+       return Opacity(opacity: _opacity,
        child:Image.asset('assets/icons/CamCaptureIcon.png',width: 100,
        height: 100,
        fit: BoxFit.contain,));
