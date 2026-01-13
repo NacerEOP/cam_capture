@@ -32,13 +32,13 @@ class _AnimatedLogoState extends State<AnimatedLogo>{
        return Opacity(opacity: _opacity,
        child:FittedBox(
          fit:BoxFit.scaleDown,
-         child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
+         child: Row(spacing: 5,mainAxisAlignment: MainAxisAlignment.center,children: [
          Image.asset('assets/icons/CamCaptureIcon.png',width: 100,
        height: 100,
        fit: BoxFit.contain,),
        Column(mainAxisAlignment: MainAxisAlignment.center,children: [
-           Text('CamCapture',style: Theme.of(context).textTheme.headlineMedium,),
-            Text('Developed by NacerEOP',style: Theme.of(context).textTheme.headlineSmall,)
+           Text('CamCapture',style: Theme.of(context).textTheme.headlineLarge,),
+            Text('Developed by NacerEOP',style: Theme.of(context).textTheme.titleMedium,)
        ],)
       
        ],),
